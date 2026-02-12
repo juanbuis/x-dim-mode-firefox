@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "X Dim Mode",
+  "version": "1.0.0",
+  "description": "Restores the Dim (dark blue) background option to X/Twitter display settings. Made by @juanbuis.",
+  "permissions": ["storage"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "x-dim-mode@juanbuis",
+      "strict_min_version": "91.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
