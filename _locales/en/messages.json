@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "X Dim Mode"
+  },
+  "extDescription": {
+    "message": "Restores the Dim (dark blue) background option to X/Twitter display settings."
+  },
+  "enableDim": {
+    "message": "Enable Dim"
+  },
+  "settingsHint": {
+    "message": "You can also toggle this from Settings → Display."
+  },
+  "credit": {
+    "message": "Made by @juanbuis"
+  },
+  "dimLabel": {
+    "message": "Dim"
+  },
+  "welcomeHeadingInstall": {
+    "message": "You're all set!"
+  },
+  "welcomeSubtitleInstall": {
+    "message": "X Dim Mode brings back the Dim dark blue theme that X removed — and adds a lot more."
+  },
+  "welcomeHeadingUpdate": {
+    "message": "X Dim Mode just got better"
+  },
+  "welcomeSubtitleUpdate": {
+    "message": "Thanks for sticking with us. Here's what's new:"
+  },
+  "installFeature1": {
+    "message": "Restores X's Dim dark blue background"
+  },
+  "installFeature2": {
+    "message": "Pick from 6 color themes — all easy on the eyes"
+  },
+  "installFeature3": {
+    "message": "Works across X and X Pro"
+  },
+  "installFeature4": {
+    "message": "Follows your system theme automatically"
+  },
+  "installFeature5": {
+    "message": "Toggle it from the popup icon or from Settings → Display"
+  },
+  "updateFeature1": {
+    "message": "New: 6 color themes — all just as easy on the eyes"
+  },
+  "updateFeature2": {
+    "message": "New: Custom color picker — choose any hue you want"
+  },
+  "updateFeature3": {
+    "message": "New: X Pro support"
+  },
+  "updateFeature4": {
+    "message": "Improved: Now covers DMs and more pages across X"
+  },
+  "updateFeature5": {
+    "message": "Improved: Auto light/dark switching with your system theme"
+  },
+  "updateFeature6": {
+    "message": "Fixed: Search bar, scrollbar, and various display bugs"
+  },
+  "tryNow": {
+    "message": "Try it now"
+  },
+  "shareOnX": {
+    "message": "Share on X"
+  },
+  "emailHeading": {
+    "message": "Want a say in what we build next?"
+  },
+  "emailNoSpam": {
+    "message": "No spam, ever."
+  },
+  "subscribe": {
+    "message": "Subscribe"
+  },
+  "emailSuccess": {
+    "message": "You're in! We'll keep you posted."
+  },
+  "emailError": {
+    "message": "Something went wrong. Please try again."
+  },
+  "emailNetworkError": {
+    "message": "Network error. Please try again."
+  }
+}

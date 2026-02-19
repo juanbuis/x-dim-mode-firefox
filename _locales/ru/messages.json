@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "X Dim Mode"
+  },
+  "extDescription": {
+    "message": "Восстанавливает тёмно-синий фон в настройках отображения X/Twitter."
+  },
+  "enableDim": {
+    "message": "Включить затемнение"
+  },
+  "settingsHint": {
+    "message": "Также можно переключить в Настройки → Дисплей."
+  },
+  "credit": {
+    "message": "Сделано @juanbuis"
+  },
+  "dimLabel": {
+    "message": "Затемнение"
+  },
+  "welcomeHeadingInstall": {
+    "message": "Всё готово!"
+  },
+  "welcomeSubtitleInstall": {
+    "message": "X Dim Mode возвращает тёмно-синюю тему, которую X удалил — и добавляет гораздо больше."
+  },
+  "welcomeHeadingUpdate": {
+    "message": "X Dim Mode стал ещё лучше"
+  },
+  "welcomeSubtitleUpdate": {
+    "message": "Спасибо, что остаётесь с нами. Вот что нового:"
+  },
+  "installFeature1": {
+    "message": "Восстанавливает тёмно-синий фон X"
+  },
+  "installFeature2": {
+    "message": "Выберите из 6 цветовых тем — все приятны для глаз"
+  },
+  "installFeature3": {
+    "message": "Работает в X и X Pro"
+  },
+  "installFeature4": {
+    "message": "Автоматически следует теме вашей системы"
+  },
+  "installFeature5": {
+    "message": "Переключайте через иконку расширения или в Настройки → Дисплей"
+  },
+  "updateFeature1": {
+    "message": "Новое: 6 цветовых тем — такие же приятные для глаз"
+  },
+  "updateFeature2": {
+    "message": "Новое: Пользовательская палитра — выберите любой оттенок"
+  },
+  "updateFeature3": {
+    "message": "Новое: Поддержка X Pro"
+  },
+  "updateFeature4": {
+    "message": "Улучшено: Теперь охватывает личные сообщения и больше страниц X"
+  },
+  "updateFeature5": {
+    "message": "Улучшено: Автоматическое переключение светлой/тёмной темы"
+  },
+  "updateFeature6": {
+    "message": "Исправлено: Строка поиска, полоса прокрутки и другие ошибки отображения"
+  },
+  "tryNow": {
+    "message": "Попробовать"
+  },
+  "shareOnX": {
+    "message": "Поделиться в X"
+  },
+  "emailHeading": {
+    "message": "Хотите повлиять на то, что мы создадим дальше?"
+  },
+  "emailNoSpam": {
+    "message": "Никакого спама."
+  },
+  "subscribe": {
+    "message": "Подписаться"
+  },
+  "emailSuccess": {
+    "message": "Готово! Мы будем держать вас в курсе."
+  },
+  "emailError": {
+    "message": "Что-то пошло не так. Попробуйте ещё раз."
+  },
+  "emailNetworkError": {
+    "message": "Ошибка сети. Попробуйте ещё раз."
+  }
+}

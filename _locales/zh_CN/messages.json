@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "X Dim Mode"
+  },
+  "extDescription": {
+    "message": "恢复 X/Twitter 显示设置中的暗蓝色背景选项。"
+  },
+  "enableDim": {
+    "message": "启用暗蓝模式"
+  },
+  "settingsHint": {
+    "message": "你也可以在设置 → 显示中切换此选项。"
+  },
+  "credit": {
+    "message": "由 @juanbuis 开发"
+  },
+  "dimLabel": {
+    "message": "暗蓝"
+  },
+  "welcomeHeadingInstall": {
+    "message": "一切就绪！"
+  },
+  "welcomeSubtitleInstall": {
+    "message": "X Dim Mode 恢复了 X 移除的暗蓝色主题，还增加了更多功能。"
+  },
+  "welcomeHeadingUpdate": {
+    "message": "X Dim Mode 变得更好了"
+  },
+  "welcomeSubtitleUpdate": {
+    "message": "感谢你的一路陪伴。以下是最新更新："
+  },
+  "installFeature1": {
+    "message": "恢复 X 的暗蓝色背景"
+  },
+  "installFeature2": {
+    "message": "6 种配色主题可选 — 全都护眼舒适"
+  },
+  "installFeature3": {
+    "message": "适用于 X 和 X Pro"
+  },
+  "installFeature4": {
+    "message": "自动跟随系统主题"
+  },
+  "installFeature5": {
+    "message": "通过弹出图标或在设置 → 显示中切换"
+  },
+  "updateFeature1": {
+    "message": "新增：6 种配色主题 — 同样护眼舒适"
+  },
+  "updateFeature2": {
+    "message": "新增：自定义取色器 — 选择任意色调"
+  },
+  "updateFeature3": {
+    "message": "新增：支持 X Pro"
+  },
+  "updateFeature4": {
+    "message": "改进：现已覆盖私信及 X 上的更多页面"
+  },
+  "updateFeature5": {
+    "message": "改进：跟随系统主题自动切换明暗模式"
+  },
+  "updateFeature6": {
+    "message": "修复：搜索栏、滚动条及多项显示问题"
+  },
+  "tryNow": {
+    "message": "立即体验"
+  },
+  "shareOnX": {
+    "message": "分享到 X"
+  },
+  "emailHeading": {
+    "message": "想参与决定我们下一步做什么？"
+  },
+  "emailNoSpam": {
+    "message": "绝不发送垃圾邮件。"
+  },
+  "subscribe": {
+    "message": "订阅"
+  },
+  "emailSuccess": {
+    "message": "订阅成功！我们会及时通知你。"
+  },
+  "emailError": {
+    "message": "出了点问题，请重试。"
+  },
+  "emailNetworkError": {
+    "message": "网络错误，请重试。"
+  }
+}

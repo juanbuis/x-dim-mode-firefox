@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>X Dim Mode</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0D1117;
+      color: #E7E9EA;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 600px;
+      background: radial-gradient(ellipse at center, rgba(29, 155, 240, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .container {
+      max-width: 540px;
+      width: 100%;
+      background: #15202B;
+      border: 1px solid #38444D;
+      border-radius: 16px;
+      padding: 36px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Close button */
+    .close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      background: transparent;
+      color: #536471;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, color 0.2s;
+    }
+    .close-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #E7E9EA;
+    }
+
+    /* Header */
+    .icon {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 16px;
+      border-radius: 12px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .version {
+      font-size: 14px;
+      color: #536471;
+      margin-bottom: 32px;
+    }
+
+    /* Heading & subtitle */
+    .heading {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 15px;
+      color: #8B98A5;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Feature list */
+    .features {
+      list-style: none;
+      margin-bottom: 28px;
+    }
+    .features li {
+      font-size: 15px;
+      color: #8B98A5;
+      padding: 8px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.4;
+    }
+    .features li::before {
+      content: "";
+      flex-shrink: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #1D9BF0;
+      margin-top: 8px;
+    }
+
+    /* Action buttons */
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      height: 40px;
+      padding: 0 20px;
+      border-radius: 20px;
+      border: none;
+      background: #1D9BF0;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      height: 40px;
+      padding: 0 20px;
+      border-radius: 20px;
+      border: 1px solid #38444D;
+      background: transparent;
+      color: #E7E9EA;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+    .btn-secondary:hover {
+      border-color: #1D9BF0;
+      color: #1D9BF0;
+    }
+
+    /* Email form */
+    .email-section {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 0;
+    }
+    .email-label {
+      font-size: 14px;
+      color: #8B98A5;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .email-label strong {
+      color: #E7E9EA;
+      font-weight: 600;
+    }
+    .email-row {
+      display: flex;
+      border-radius: 24px;
+      border: 1px solid #38444D;
+      overflow: hidden;
+      transition: border-color 0.2s;
+      margin: 0;
+    }
+    .email-row:focus-within { border-color: #1D9BF0; }
+    .email-input {
+      flex: 1;
+      height: 44px;
+      padding: 0 16px;
+      border: none;
+      background: transparent;
+      color: #E7E9EA;
+      font-size: 14px;
+      outline: none;
+    }
+    .email-input::placeholder { color: #536471; }
+    .email-btn {
+      height: 44px;
+      padding: 0 22px;
+      border: none;
+      background: #1D9BF0;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+    .email-btn:hover { opacity: 0.85; }
+    .email-btn:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    /* Success state */
+    .email-success {
+      display: none;
+      font-size: 14px;
+      color: #00BA7C;
+      padding: 10px 0 0;
+      margin: 0;
+    }
+    .email-error {
+      display: none;
+      font-size: 13px;
+      color: #F4212E;
+      padding: 8px 0 0;
+      margin: 0;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #536471;
+      text-align: center;
+      z-index: 1;
+    }
+    .footer a {
+      color: #1D9BF0;
+      text-decoration: none;
+    }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="close-btn" id="closeBtn" title="Close">&times;</button>
+    <img class="icon" src="icons/icon128.png" alt="">
+    <h1>X Dim Mode</h1>
+    <p class="version" id="version"></p>
+
+    <h2 class="heading" id="heading"></h2>
+    <p class="subtitle" id="subtitle"></p>
+
+    <ul class="features" id="features"></ul>
+
+    <div class="actions" id="actions"></div>
+
+    <div class="email-section">
+      <p class="email-label" id="emailLabel"></p>
+      <form class="email-row" id="emailForm"
+            action="https://assets.mailerlite.com/jsonp/1436119/forms/179598724460184835/subscribe"
+            method="POST">
+        <input type="hidden" name="ml-submit" value="1">
+        <input type="hidden" name="anticsrf" value="true">
+        <input class="email-input" type="email" name="fields[email]" placeholder="you@email.com" required id="emailInput">
+        <button class="email-btn" type="submit" id="subscribeBtn"></button>
+      </form>
+      <p class="email-success" id="emailSuccess"></p>
+      <p class="email-error" id="emailError"></p>
+    </div>
+
+  </div>
+  <p class="footer">A project by <a href="https://juanbuis.com" target="_blank">Juan Buis</a> — <a href="https://x.com/juanbuis" target="_blank">follow me on X for updates</a> :)</p>
+
+  <script src="welcome.js"></script>
+</body>
+</html>

@@ -1,23 +1,32 @@
 {
-  "manifest_version": 2,
-  "name": "X Dim Mode",
-  "version": "1.0.0",
-  "description": "Restores the Dim (dark blue) background option to X/Twitter display settings. Made by @juanbuis.",
-  "permissions": ["storage"],
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "x-dim-mode@juanbuis",
-      "strict_min_version": "91.0"
-    }
-  },
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "1.3.0",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://assets.mailerlite.com/*"
+  ],
   "content_scripts": [
     {
-      "matches": ["https://x.com/*", "https://twitter.com/*"],
-      "js": ["content.js"],
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*",
+        "https://pro.x.com/*"
+      ],
+      "css": [
+        "preload.css"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_start"
     }
   ],
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icons/icon16.png",
@@ -25,9 +34,25 @@
       "128": "icons/icon128.png"
     }
   },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "x-dim-mode@juanbuis.com",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
   }
 }

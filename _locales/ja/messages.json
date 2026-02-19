@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "X Dim Mode"
+  },
+  "extDescription": {
+    "message": "X/Twitterの表示設定にダークブルーの背景オプションを復元します。"
+  },
+  "enableDim": {
+    "message": "ダークブルーを有効にする"
+  },
+  "settingsHint": {
+    "message": "設定 → 表示からも切り替えられます。"
+  },
+  "credit": {
+    "message": "作成者: @juanbuis"
+  },
+  "dimLabel": {
+    "message": "ダークブルー"
+  },
+  "welcomeHeadingInstall": {
+    "message": "準備完了！"
+  },
+  "welcomeSubtitleInstall": {
+    "message": "X Dim ModeはXが削除したダークブルーテーマを復元し、さらに多くの機能を追加します。"
+  },
+  "welcomeHeadingUpdate": {
+    "message": "X Dim Modeがさらに良くなりました"
+  },
+  "welcomeSubtitleUpdate": {
+    "message": "ご利用いただきありがとうございます。新機能をご紹介します："
+  },
+  "installFeature1": {
+    "message": "Xのダークブルー背景を復元"
+  },
+  "installFeature2": {
+    "message": "6つのカラーテーマから選択 — すべて目に優しい"
+  },
+  "installFeature3": {
+    "message": "XとX Proの両方で動作"
+  },
+  "installFeature4": {
+    "message": "システムテーマに自動で追従"
+  },
+  "installFeature5": {
+    "message": "ポップアップアイコンまたは設定 → 表示から切り替え"
+  },
+  "updateFeature1": {
+    "message": "新機能：6つのカラーテーマ — すべて目に優しい"
+  },
+  "updateFeature2": {
+    "message": "新機能：カスタムカラーピッカー — 好きな色を自由に選択"
+  },
+  "updateFeature3": {
+    "message": "新機能：X Proに対応"
+  },
+  "updateFeature4": {
+    "message": "改善：DMやXのより多くのページに対応"
+  },
+  "updateFeature5": {
+    "message": "改善：システムテーマに合わせた自動ライト/ダーク切り替え"
+  },
+  "updateFeature6": {
+    "message": "修正：検索バー、スクロールバー、その他の表示バグ"
+  },
+  "tryNow": {
+    "message": "今すぐ試す"
+  },
+  "shareOnX": {
+    "message": "Xでシェア"
+  },
+  "emailHeading": {
+    "message": "次に何を作るか、ご意見をお聞かせください"
+  },
+  "emailNoSpam": {
+    "message": "スパムは一切送りません。"
+  },
+  "subscribe": {
+    "message": "登録する"
+  },
+  "emailSuccess": {
+    "message": "登録完了！最新情報をお届けします。"
+  },
+  "emailError": {
+    "message": "エラーが発生しました。もう一度お試しください。"
+  },
+  "emailNetworkError": {
+    "message": "ネットワークエラー。もう一度お試しください。"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "X Dim Mode"
+  },
+  "extDescription": {
+    "message": "Restaura la opción de fondo Tenue (azul oscuro) en la configuración de pantalla de X/Twitter."
+  },
+  "enableDim": {
+    "message": "Activar Tenue"
+  },
+  "settingsHint": {
+    "message": "También puedes activarlo en Configuración → Pantalla."
+  },
+  "credit": {
+    "message": "Hecho por @juanbuis"
+  },
+  "dimLabel": {
+    "message": "Tenue"
+  },
+  "welcomeHeadingInstall": {
+    "message": "¡Todo listo!"
+  },
+  "welcomeSubtitleInstall": {
+    "message": "X Dim Mode restaura el tema azul oscuro Tenue que X eliminó — y añade mucho más."
+  },
+  "welcomeHeadingUpdate": {
+    "message": "X Dim Mode acaba de mejorar"
+  },
+  "welcomeSubtitleUpdate": {
+    "message": "Gracias por seguir con nosotros. Esto es lo nuevo:"
+  },
+  "installFeature1": {
+    "message": "Restaura el fondo azul oscuro Tenue de X"
+  },
+  "installFeature2": {
+    "message": "Elige entre 6 temas de color — todos agradables a la vista"
+  },
+  "installFeature3": {
+    "message": "Funciona en X y X Pro"
+  },
+  "installFeature4": {
+    "message": "Sigue el tema de tu sistema automáticamente"
+  },
+  "installFeature5": {
+    "message": "Actívalo desde el icono del popup o en Configuración → Pantalla"
+  },
+  "updateFeature1": {
+    "message": "Nuevo: 6 temas de color — igual de agradables a la vista"
+  },
+  "updateFeature2": {
+    "message": "Nuevo: Selector de color personalizado — elige el tono que quieras"
+  },
+  "updateFeature3": {
+    "message": "Nuevo: Compatibilidad con X Pro"
+  },
+  "updateFeature4": {
+    "message": "Mejorado: Ahora cubre los DMs y más páginas en X"
+  },
+  "updateFeature5": {
+    "message": "Mejorado: Cambio automático claro/oscuro según el tema del sistema"
+  },
+  "updateFeature6": {
+    "message": "Corregido: Barra de búsqueda, scrollbar y varios errores de visualización"
+  },
+  "tryNow": {
+    "message": "Pruébalo ahora"
+  },
+  "shareOnX": {
+    "message": "Compartir en X"
+  },
+  "emailHeading": {
+    "message": "¿Quieres opinar sobre lo que creamos?"
+  },
+  "emailNoSpam": {
+    "message": "Sin spam, nunca."
+  },
+  "subscribe": {
+    "message": "Suscribirse"
+  },
+  "emailSuccess": {
+    "message": "¡Listo! Te mantendremos informado."
+  },
+  "emailError": {
+    "message": "Algo salió mal. Inténtalo de nuevo."
+  },
+  "emailNetworkError": {
+    "message": "Error de red. Inténtalo de nuevo."
+  }
+}

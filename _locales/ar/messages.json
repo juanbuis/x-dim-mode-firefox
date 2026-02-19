@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "X Dim Mode"
+  },
+  "extDescription": {
+    "message": "يستعيد خيار الخلفية الخافتة (الأزرق الداكن) في إعدادات العرض في X/Twitter."
+  },
+  "enableDim": {
+    "message": "تفعيل الوضع الخافت"
+  },
+  "settingsHint": {
+    "message": "يمكنك أيضًا التبديل من الإعدادات ← العرض."
+  },
+  "credit": {
+    "message": "من تطوير @juanbuis"
+  },
+  "dimLabel": {
+    "message": "خافت"
+  },
+  "welcomeHeadingInstall": {
+    "message": "!كل شيء جاهز"
+  },
+  "welcomeSubtitleInstall": {
+    "message": "يُعيد X Dim Mode السمة الزرقاء الداكنة التي أزالها X — ويضيف الكثير."
+  },
+  "welcomeHeadingUpdate": {
+    "message": "أصبح X Dim Mode أفضل"
+  },
+  "welcomeSubtitleUpdate": {
+    "message": "شكرًا لبقائك معنا. إليك الجديد:"
+  },
+  "installFeature1": {
+    "message": "يستعيد خلفية X الزرقاء الداكنة"
+  },
+  "installFeature2": {
+    "message": "اختر من 6 سمات ألوان — جميعها مريحة للعين"
+  },
+  "installFeature3": {
+    "message": "يعمل على X و X Pro"
+  },
+  "installFeature4": {
+    "message": "يتبع سمة نظامك تلقائيًا"
+  },
+  "installFeature5": {
+    "message": "فعّله من أيقونة الإضافة أو من الإعدادات ← العرض"
+  },
+  "updateFeature1": {
+    "message": "جديد: 6 سمات ألوان — مريحة للعين بنفس القدر"
+  },
+  "updateFeature2": {
+    "message": "جديد: منتقي ألوان مخصص — اختر أي درجة لون تريدها"
+  },
+  "updateFeature3": {
+    "message": "جديد: دعم X Pro"
+  },
+  "updateFeature4": {
+    "message": "محسّن: يشمل الآن الرسائل المباشرة والمزيد من صفحات X"
+  },
+  "updateFeature5": {
+    "message": "محسّن: تبديل تلقائي بين الوضع الفاتح والداكن حسب سمة النظام"
+  },
+  "updateFeature6": {
+    "message": "مُصلَح: شريط البحث وشريط التمرير وأخطاء عرض متنوعة"
+  },
+  "tryNow": {
+    "message": "جرّبه الآن"
+  },
+  "shareOnX": {
+    "message": "شارك على X"
+  },
+  "emailHeading": {
+    "message": "هل تريد المشاركة في تحديد ما نبنيه لاحقًا؟"
+  },
+  "emailNoSpam": {
+    "message": "بدون رسائل مزعجة، أبدًا."
+  },
+  "subscribe": {
+    "message": "اشترك"
+  },
+  "emailSuccess": {
+    "message": "!تم التسجيل! سنبقيك على اطلاع"
+  },
+  "emailError": {
+    "message": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+  },
+  "emailNetworkError": {
+    "message": "خطأ في الشبكة. يرجى المحاولة مرة أخرى."
+  }
+}

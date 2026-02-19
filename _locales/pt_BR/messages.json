@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "X Dim Mode"
+  },
+  "extDescription": {
+    "message": "Restaura a opção de fundo Escurecido (azul escuro) nas configurações de exibição do X/Twitter."
+  },
+  "enableDim": {
+    "message": "Ativar Escurecido"
+  },
+  "settingsHint": {
+    "message": "Você também pode alternar em Configurações → Tela."
+  },
+  "credit": {
+    "message": "Feito por @juanbuis"
+  },
+  "dimLabel": {
+    "message": "Escurecido"
+  },
+  "welcomeHeadingInstall": {
+    "message": "Tudo pronto!"
+  },
+  "welcomeSubtitleInstall": {
+    "message": "O X Dim Mode restaura o tema azul escuro Escurecido que o X removeu — e adiciona muito mais."
+  },
+  "welcomeHeadingUpdate": {
+    "message": "O X Dim Mode ficou ainda melhor"
+  },
+  "welcomeSubtitleUpdate": {
+    "message": "Obrigado por continuar conosco. Veja o que há de novo:"
+  },
+  "installFeature1": {
+    "message": "Restaura o fundo azul escuro Escurecido do X"
+  },
+  "installFeature2": {
+    "message": "Escolha entre 6 temas de cores — todos agradáveis aos olhos"
+  },
+  "installFeature3": {
+    "message": "Funciona no X e no X Pro"
+  },
+  "installFeature4": {
+    "message": "Segue o tema do seu sistema automaticamente"
+  },
+  "installFeature5": {
+    "message": "Ative pelo ícone do popup ou em Configurações → Tela"
+  },
+  "updateFeature1": {
+    "message": "Novo: 6 temas de cores — igualmente agradáveis aos olhos"
+  },
+  "updateFeature2": {
+    "message": "Novo: Seletor de cores personalizado — escolha qualquer tom que quiser"
+  },
+  "updateFeature3": {
+    "message": "Novo: Suporte ao X Pro"
+  },
+  "updateFeature4": {
+    "message": "Melhorado: Agora cobre DMs e mais páginas no X"
+  },
+  "updateFeature5": {
+    "message": "Melhorado: Alternância automática claro/escuro com o tema do sistema"
+  },
+  "updateFeature6": {
+    "message": "Corrigido: Barra de pesquisa, scrollbar e vários bugs de exibição"
+  },
+  "tryNow": {
+    "message": "Experimente agora"
+  },
+  "shareOnX": {
+    "message": "Compartilhar no X"
+  },
+  "emailHeading": {
+    "message": "Quer opinar sobre o que criamos a seguir?"
+  },
+  "emailNoSpam": {
+    "message": "Sem spam, nunca."
+  },
+  "subscribe": {
+    "message": "Inscrever-se"
+  },
+  "emailSuccess": {
+    "message": "Pronto! Vamos mantê-lo informado."
+  },
+  "emailError": {
+    "message": "Algo deu errado. Tente novamente."
+  },
+  "emailNetworkError": {
+    "message": "Erro de rede. Tente novamente."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "X Dim Mode"
+  },
+  "extDescription": {
+    "message": "Stellt die dunkelblaue Hintergrundoption in den Anzeige-Einstellungen von X/Twitter wieder her."
+  },
+  "enableDim": {
+    "message": "Gedimmt aktivieren"
+  },
+  "settingsHint": {
+    "message": "Du kannst dies auch unter Einstellungen → Anzeige umschalten."
+  },
+  "credit": {
+    "message": "Erstellt von @juanbuis"
+  },
+  "dimLabel": {
+    "message": "Gedimmt"
+  },
+  "welcomeHeadingInstall": {
+    "message": "Alles bereit!"
+  },
+  "welcomeSubtitleInstall": {
+    "message": "X Dim Mode bringt das dunkelblaue Gedimmt-Design zurück, das X entfernt hat — und fügt noch viel mehr hinzu."
+  },
+  "welcomeHeadingUpdate": {
+    "message": "X Dim Mode ist jetzt noch besser"
+  },
+  "welcomeSubtitleUpdate": {
+    "message": "Danke, dass du dabei bleibst. Das ist neu:"
+  },
+  "installFeature1": {
+    "message": "Stellt den dunkelblauen Gedimmt-Hintergrund von X wieder her"
+  },
+  "installFeature2": {
+    "message": "Wähle aus 6 Farbdesigns — alle angenehm für die Augen"
+  },
+  "installFeature3": {
+    "message": "Funktioniert auf X und X Pro"
+  },
+  "installFeature4": {
+    "message": "Folgt automatisch deinem System-Design"
+  },
+  "installFeature5": {
+    "message": "Schalte es über das Popup-Symbol oder unter Einstellungen → Anzeige um"
+  },
+  "updateFeature1": {
+    "message": "Neu: 6 Farbdesigns — genauso angenehm für die Augen"
+  },
+  "updateFeature2": {
+    "message": "Neu: Benutzerdefinierte Farbauswahl — wähle jeden Farbton, den du möchtest"
+  },
+  "updateFeature3": {
+    "message": "Neu: X Pro-Unterstützung"
+  },
+  "updateFeature4": {
+    "message": "Verbessert: Deckt jetzt DMs und mehr Seiten auf X ab"
+  },
+  "updateFeature5": {
+    "message": "Verbessert: Automatischer Hell/Dunkel-Wechsel mit deinem System-Design"
+  },
+  "updateFeature6": {
+    "message": "Behoben: Suchleiste, Scrollbar und verschiedene Anzeigefehler"
+  },
+  "tryNow": {
+    "message": "Jetzt ausprobieren"
+  },
+  "shareOnX": {
+    "message": "Auf X teilen"
+  },
+  "emailHeading": {
+    "message": "Willst du mitbestimmen, was wir als Nächstes bauen?"
+  },
+  "emailNoSpam": {
+    "message": "Kein Spam, niemals."
+  },
+  "subscribe": {
+    "message": "Abonnieren"
+  },
+  "emailSuccess": {
+    "message": "Du bist dabei! Wir halten dich auf dem Laufenden."
+  },
+  "emailError": {
+    "message": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
+  },
+  "emailNetworkError": {
+    "message": "Netzwerkfehler. Bitte versuche es erneut."
+  }
+}
