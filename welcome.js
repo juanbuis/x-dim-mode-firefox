@@ -91,22 +91,13 @@ form.addEventListener("submit", async (e) => {
   error.style.display = "none";
 
   try {
-    const res = await fetch(form.action, {
+    await fetch(form.action, {
       method: "POST",
       body: new FormData(form),
+      mode: "no-cors",
     });
-
-    const text = await res.text();
-
-    if (res.ok) {
-      form.style.display = "none";
-      success.style.display = "block";
-    } else {
-      error.textContent = msg("emailError");
-      error.style.display = "block";
-      btn.disabled = false;
-      btn.textContent = msg("subscribe");
-    }
+    form.style.display = "none";
+    success.style.display = "block";
   } catch (err) {
     error.textContent = msg("emailNetworkError");
     error.style.display = "block";

@@ -232,18 +232,78 @@ ensureBaseCSS();
 
 // Optimistically apply dim before async storage read using localStorage as sync cache.
 // First install: cache is null → default to dim. Disabled users: cache is "0" → skip.
-if (localStorage.getItem("__xdm_enabled") !== "0") {
+// Gate on system dark to match preload.css — avoids dim CSS leaking onto a light-mode page.
+if (localStorage.getItem("__xdm_enabled") !== "0" &&
+    (!window.matchMedia || window.matchMedia("(prefers-color-scheme: dark)").matches)) {
   document.documentElement.classList.add(DIM_CLASS);
+}
+
+// ── PWA theme-color sync ──────────────────────────────────────────
+// Updates <meta name="theme-color"> so the PWA title bar matches the dim bg.
+
+let _originalThemeColor = null;
+let _themeColorObserver = null;
+
+function syncThemeColor() {
+  let meta = document.querySelector('meta[name="theme-color"]');
+  if (!meta) {
+    if (!document.head) return;
+    meta = document.createElement("meta");
+    meta.name = "theme-color";
+    document.head.appendChild(meta);
+  }
+  if (_originalThemeColor === null) _originalThemeColor = meta.getAttribute("content");
+  const { hue, sat } = getActiveHueSat();
+  const desired = `hsl(${hue}, ${sat}%, 13%)`;
+  if (meta.getAttribute("content") !== desired) {
+    meta.setAttribute("content", desired);
+  }
+}
+
+// Watch <head> for the theme-color meta being added or changed by X
+function startThemeColorObserver() {
+  if (_themeColorObserver) return;
+  const head = document.head;
+  if (!head) return;
+  _themeColorObserver = new MutationObserver(() => {
+    if (_enabled && document.documentElement.classList.contains(DIM_CLASS)) {
+      syncThemeColor();
+    }
+  });
+  _themeColorObserver.observe(head, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["content"],
+  });
+}
+
+function stopThemeColorObserver() {
+  if (_themeColorObserver) {
+    _themeColorObserver.disconnect();
+    _themeColorObserver = null;
+  }
+}
+
+function restoreThemeColor() {
+  if (_originalThemeColor === null) return;
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", _originalThemeColor);
+  _originalThemeColor = null;
 }
 
 function applyDim() {
   ensureBaseCSS();
   document.documentElement.classList.add(DIM_CLASS);
+  syncThemeColor();
+  startThemeColorObserver();
   if (document.body) queueScan([document.body]);
 }
 
 function removeDim() {
   document.documentElement.classList.remove(DIM_CLASS);
+  stopThemeColorObserver();
+  restoreThemeColor();
   // Cancel any pending scan
   if (_scanFrame) {
     cancelAnimationFrame(_scanFrame);
@@ -270,8 +330,10 @@ function syncDimWithTheme() {
   if (hasLightsOut) {
     // X is in dark mode → activate dim
     _suspendedForLight = false;
+    // Always call applyDim — the class may be present from optimistic add
+    // without proper init (scan, theme-color). applyDim is idempotent.
+    applyDim();
     if (!dimActive) {
-      applyDim();
       for (const ms of [500, 1500, 3000, 5000]) setTimeout(fullRescan, ms);
     }
   } else if (dimActive && _seenLightsOut) {
@@ -593,6 +655,7 @@ chrome.storage.onChanged.addListener((changes) => {
     if (changes.theme) _theme = changes.theme.newValue ?? "dim";
     if (changes.customHue) _customHue = changes.customHue.newValue ?? 210;
     ensureBaseCSS();
+    syncThemeColor();
     updateSettingsButtonColor();
   }
 });
