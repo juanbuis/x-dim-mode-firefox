@@ -69,7 +69,7 @@
     "message": "شارك على X"
   },
   "emailHeading": {
-    "message": "هل تريد المشاركة في تحديد ما نبنيه لاحقًا؟"
+    "message": "احصل على وصول مبكر لأدواتي القادمة"
   },
   "emailNoSpam": {
     "message": "بدون رسائل مزعجة، أبدًا."
@@ -85,5 +85,14 @@
   },
   "emailNetworkError": {
     "message": "خطأ في الشبكة. يرجى المحاولة مرة أخرى."
+  },
+  "popupShareLink": {
+    "message": "مشاركة"
+  },
+  "engageQuestion": {
+    "message": "هل تستمتع بـ X Dim Mode؟"
+  },
+  "engageRate": {
+    "message": "مراجعة"
   }
 }

@@ -69,7 +69,7 @@
     "message": "X에서 공유"
   },
   "emailHeading": {
-    "message": "다음에 무엇을 만들지 의견을 주세요"
+    "message": "다음 도구에 먼저 액세스하세요"
   },
   "emailNoSpam": {
     "message": "스팸은 절대 보내지 않습니다."
@@ -85,5 +85,14 @@
   },
   "emailNetworkError": {
     "message": "네트워크 오류. 다시 시도해 주세요."
+  },
+  "popupShareLink": {
+    "message": "공유"
+  },
+  "engageQuestion": {
+    "message": "X Dim Mode 마음에 드시나요?"
+  },
+  "engageRate": {
+    "message": "리뷰"
   }
 }

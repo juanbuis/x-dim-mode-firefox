@@ -69,7 +69,7 @@
     "message": "Auf X teilen"
   },
   "emailHeading": {
-    "message": "Willst du mitbestimmen, was wir als Nächstes bauen?"
+    "message": "Erhalte frühzeitig Zugang zu meinen nächsten Tools"
   },
   "emailNoSpam": {
     "message": "Kein Spam, niemals."
@@ -85,5 +85,14 @@
   },
   "emailNetworkError": {
     "message": "Netzwerkfehler. Bitte versuche es erneut."
+  },
+  "popupShareLink": {
+    "message": "Teilen"
+  },
+  "engageQuestion": {
+    "message": "Gefällt dir X Dim Mode?"
+  },
+  "engageRate": {
+    "message": "Bewerten"
   }
 }
