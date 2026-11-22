@@ -69,7 +69,7 @@
     "message": "分享到 X"
   },
   "emailHeading": {
-    "message": "想参与决定我们下一步做什么？"
+    "message": "抢先体验我的下一款工具"
   },
   "emailNoSpam": {
     "message": "绝不发送垃圾邮件。"
@@ -85,5 +85,14 @@
   },
   "emailNetworkError": {
     "message": "网络错误，请重试。"
+  },
+  "popupShareLink": {
+    "message": "分享"
+  },
+  "engageQuestion": {
+    "message": "喜欢 X Dim Mode 吗？"
+  },
+  "engageRate": {
+    "message": "评价"
   }
 }

@@ -69,7 +69,7 @@
     "message": "Поделиться в X"
   },
   "emailHeading": {
-    "message": "Хотите повлиять на то, что мы создадим дальше?"
+    "message": "Получите ранний доступ к моим следующим инструментам"
   },
   "emailNoSpam": {
     "message": "Никакого спама."
@@ -85,5 +85,14 @@
   },
   "emailNetworkError": {
     "message": "Ошибка сети. Попробуйте ещё раз."
+  },
+  "popupShareLink": {
+    "message": "Поделиться"
+  },
+  "engageQuestion": {
+    "message": "Нравится X Dim Mode?"
+  },
+  "engageRate": {
+    "message": "Отзыв"
   }
 }
